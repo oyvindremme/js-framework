@@ -40,19 +40,21 @@ class Home extends React.Component {
                 <SearchBar
                     onSearchTerm={this.searchingCards}
                 />
-                <section className="container-fluid">
-                    {
-                        this.state.isLoading
-                        ? "Loading cards..."
-                        :   <div className="row">
-                                {
-                                    this.state.pokemon === ""
-                                    ? <p>Seems we couldn't find what you're looking for</p>
-                                    : <Card cards={this.state.pokemon} />
-                                }
-                            </div>
-                    }
-                </section>
+                <main className="container-fluid">
+                    <section className="container-fluid">
+                        {
+                            this.state.isLoading
+                            ? "Loading cards..."
+                            :   <div className="row">
+                                    {
+                                        this.state.pokemon === ""
+                                        ? <p>Seems we couldn't find what you're looking for</p>
+                                        : <Card cards={this.state.pokemon} />
+                                    }
+                                </div>
+                        }
+                    </section>
+                </main>
             </React.Fragment>
         );
     }

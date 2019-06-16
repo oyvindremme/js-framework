@@ -14,13 +14,13 @@ class SearchBar extends Component {
                 <div className="form-group">
                     <div className="input-group">
                         <input
-                            className="form-control"
+                            className="form-control form-control-lg"
                             type="text"
                             placeholder="Search cards..."
                             ref="searchTerm"
                             onChange={this.runSearchTerm}
                         />
-                        <button className="btn btn-primary" onClick={this.runSearchTerm}>Search</button>
+                        <button className="btn btn-lg btn-primary" onClick={this.runSearchTerm}>Search</button>
                     </div>
                 </div>
             </form>

@@ -12,3 +12,7 @@ input {
 body {
     color: map-get($theme-colors, "dark" );
 }
+
+main {
+    min-height: 670px;
+}

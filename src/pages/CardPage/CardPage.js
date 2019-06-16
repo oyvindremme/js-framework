@@ -25,7 +25,7 @@ class CardPage extends Component {
         console.log(pokemon);
         return (
             <main className="container">
-                <p className="mt-1">
+                <p className="mt-2 lead">
                     <Link to="/">Home</Link> / {pokemon.name}
                 </p>
                 <h1 className="mb-3"><span className="badge badge-primary">#{pokemon.number}</span> {pokemon.name}</h1>
@@ -35,15 +35,17 @@ class CardPage extends Component {
                     </div>
                     <div className="col-md-8">
                         <h2 className="mb-3">Details</h2>
-                        <p className="mb-2">
-                            <strong>Supertype:</strong> {pokemon.supertype}
-                        </p>
-                        <p className="mb-2">
-                            <strong>Rarity:</strong> {pokemon.rarity}
-                        </p>
-                        <p className="mb-2">
-                            <strong>Artist:</strong> {pokemon.artist}
-                        </p>
+                        <div className="lead">
+                            <p className="mb-2">
+                                <strong>Supertype:</strong> {pokemon.supertype}
+                            </p>
+                            <p className="mb-2">
+                                <strong>Rarity:</strong> {pokemon.rarity}
+                            </p>
+                            <p className="mb-2">
+                                <strong>Artist:</strong> {pokemon.artist}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </main>

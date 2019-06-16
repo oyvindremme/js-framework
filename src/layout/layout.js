@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from '../components/Footer/Footer';
 
 class Layout extends Component {
     render() { 
