@@ -1,1 +1,10 @@
+@import './_fonts.scss';
+
+@import './_vars.scss';
+
+.btn,
+input {
+    border-radius: 0!important;
+}
+
 @import "~bootstrap/scss/bootstrap";
