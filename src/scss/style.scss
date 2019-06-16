@@ -8,3 +8,7 @@ input {
 }
 
 @import "~bootstrap/scss/bootstrap";
+
+body {
+    color: map-get($theme-colors, "dark" );
+}
