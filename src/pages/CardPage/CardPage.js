@@ -36,9 +36,6 @@ class CardPage extends Component {
                     <div className="col-md-8">
                         <h2 className="mb-3">Details</h2>
                         <p className="mb-2">
-                            <strong>Text:</strong> {pokemon.text}
-                        </p>
-                        <p className="mb-2">
                             <strong>Supertype:</strong> {pokemon.supertype}
                         </p>
                         <p className="mb-2">
