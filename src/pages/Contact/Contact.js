@@ -124,7 +124,7 @@ class Contact extends Component {
                                     <span className="text-light lead" style={{
                                         display: this.state.nameError ? "block" : "none"
                                     }}>
-                                        🤬 Field empty!
+                                        <span role="img" aria-hidden="true">🤬</span> Field empty!
                                     </span>
                                 </div>
                                 <div className="form-group">
@@ -140,7 +140,7 @@ class Contact extends Component {
                                     <span className="text-light lead" style={{
                                         display: this.state.phoneError ? "block" : "none"
                                     }}>
-                                        🤬 Invalid phone number!
+                                        <span role="img" aria-hidden="true">🤬</span> Invalid phone number!
                                     </span>
                                 </div>
                                 <div className="form-group">
@@ -161,7 +161,7 @@ class Contact extends Component {
                                     <span className="text-light lead" style={{
                                         display: this.state.regardError ? "block" : "none"
                                     }}>
-                                        🤬 Value must be selected!
+                                        <span role="img" aria-hidden="true">🤬</span> Value must be selected!
                                     </span>
                                 </div>
                                 <div className="form-group">
@@ -177,7 +177,7 @@ class Contact extends Component {
                                     <span className="text-light lead" style={{
                                         display: this.state.messageError ? "block" : "none"
                                     }}>
-                                        🤬 Field empty!
+                                        <span role="img" aria-hidden="true">🤬</span> Field empty!
                                     </span>
                                 </div>
                                 <div className="form-group">
