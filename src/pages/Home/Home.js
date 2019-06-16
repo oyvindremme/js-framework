@@ -16,7 +16,7 @@ class Home extends React.Component {
         fetch('https://api.pokemontcg.io/v1/cards?setCode=base1')
             .then(res => res.json())
             .then(data => this.setState({
-                pokemon: data,
+                pokemon: data.cards,
                 isLoading: false
             }))
             .catch(err => console.log(err));
@@ -27,7 +27,7 @@ class Home extends React.Component {
         fetch(`https://api.pokemontcg.io/v1/cards?setCode=base1&name=${term}`)
             .then(res => res.json())
             .then(data => this.setState({
-                pokemon: data,
+                pokemon: data.cards,
                 isLoading: false
             }))
             .catch(err => console.log(err));
@@ -43,9 +43,13 @@ class Home extends React.Component {
                 <section className="container-fluid">
                     {
                         this.state.isLoading
-                        ? "Loading..."
+                        ? "Loading cards..."
                         :   <div className="row">
-                                <Card cards={this.state.pokemon.cards} />
+                                {
+                                    this.state.pokemon === ""
+                                    ? <p>Seems we couldn't find what you're looking for</p>
+                                    : <Card cards={this.state.pokemon} />
+                                }
                             </div>
                     }
                 </section>

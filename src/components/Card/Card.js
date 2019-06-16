@@ -7,7 +7,7 @@ class Card extends Component {
             <React.Fragment>
                 {this.props.cards.map((card, i) => {
                     return (
-                        <div key={i} className="col-md-2 col-6 mb-4">
+                        <div key={i} className="col-md-3 col-6 mb-4">
                             <Link to={`/card/${card.number}`}>
                                 <img className="img-fluid mx-auto" src={card.imageUrl} alt={`The ${card.name} card`} />
                             </Link>
